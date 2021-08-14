@@ -99,3 +99,15 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+.modal-footer {
+  border-top: 0;
+}
+.modal-footer > * {
+  margin: 0rem;
+}
