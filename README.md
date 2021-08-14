@@ -17,3 +17,6 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Public Path Instructions
+https://stackoverflow.com/questions/65677454/how-do-i-get-my-base-url-to-change-in-vue-cli

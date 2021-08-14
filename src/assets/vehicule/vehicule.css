@@ -88,6 +88,14 @@
   border-radius: 100%;
   background-color: rgb(49, 49, 170);
 }
+.place-indicator {
+  position: relative;
+  bottom: 755px;
+  right: 133px;
+}
+.indicator-number {
+  color: #fff;
+}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

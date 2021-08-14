@@ -136,10 +136,12 @@
                   </select>
                 </div>
               </form>
-              <div class="legend d-flex justify-content-start"><span class="icon"></span> Driver</div>
+              <div class="legend d-flex justify-content-start">
+                <span class="icon"></span> Driver
+              </div>
             </div>
             <div class="car-global" :class="changeColSize">
-              <img class="col-12 bus-front" src="/images/seats/bus_front.png" />
+              <img class="col-12 bus-front" src="/img/seats/bus_front.png" />
               <div class="car">
                 <div class="row g-0 seat-car d-flex justify-content-center">
                   <img
@@ -165,13 +167,9 @@
 <style src="../assets/vehicule/vehicule.css" scoped></style>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
-  },
+  components: {},
   data() {
     return {
       seatPlaces: [],
@@ -186,7 +184,7 @@ export default {
     for (let i = 0; i < 90; i++) {
       this.seatPlaces.push({
         indice: i,
-        url: "/images/seats/seat_free.svg",
+        url: "/img/seats/seat_free.svg",
         type: "FREE",
       });
     }
@@ -199,7 +197,7 @@ export default {
           for (let i = 0; i < this.columns; i++) {
             this.seatPlaces.push({
               indice: i,
-              url: "/images/seats/seat_free.svg",
+              url: "/img/seats/seat_free.svg",
               type: "FREE",
             });
           }
@@ -221,7 +219,7 @@ export default {
           for (let i = 0; i < this.rows; i++) {
             this.seatPlaces.push({
               indice: i,
-              url: "/images/seats/seat_free.svg",
+              url: "/img/seats/seat_free.svg",
               type: "FREE",
             });
           }
@@ -247,10 +245,10 @@ export default {
             }
           }
           if (this.seatPlaces[index].type == "FREE") {
-            this.seatPlaces[index].url = "/images/seats/seat_driver.svg";
+            this.seatPlaces[index].url = "/img/seats/seat_driver.svg";
             this.seatPlaces[index].type = "DRIVER";
           } else if (this.seatPlaces[index].type == "DRIVER") {
-            this.seatPlaces[index].url = "/images/seats/seat_free.svg";
+            this.seatPlaces[index].url = "/img/seats/seat_free.svg";
             this.seatPlaces[index].type = "FREE";
           }
           break;
@@ -260,10 +258,10 @@ export default {
             return false;
           }
           if (this.seatPlaces[index].type == "SPACE") {
-            this.seatPlaces[index].url = "/images/seats/seat_free.svg";
+            this.seatPlaces[index].url = "/img/seats/seat_free.svg";
             this.seatPlaces[index].type = "FREE";
           } else {
-            this.seatPlaces[index].url = "/images/seats/seat_space.svg";
+            this.seatPlaces[index].url = "/img/seats/seat_space.svg";
             this.seatPlaces[index].type = "SPACE";
           }
           break;
@@ -273,10 +271,10 @@ export default {
             return false;
           }
           if (this.seatPlaces[index].type == "EXTENTION") {
-            this.seatPlaces[index].url = "/images/seats/seat_free.svg";
+            this.seatPlaces[index].url = "/img/seats/seat_free.svg";
             this.seatPlaces[index].type = "FREE";
           } else {
-            this.seatPlaces[index].url = "/images/seats/seat_extention.svg";
+            this.seatPlaces[index].url = "/img/seats/seat_extention.svg";
             this.seatPlaces[index].type = "EXTENTION";
           }
           break;
