@@ -18,10 +18,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Vehicle setup |
-              <span class="badge rounded-pill bg-primary">Driver</span>
-            </h5>
+            <h5 class="modal-title" id="exampleModalLabel">Vehicle setup</h5>
             <button
               type="button"
               class="btn-close"
@@ -129,7 +126,7 @@
                   </div>
                   <select
                     v-model="seatType"
-                    class="form-select mb-2"
+                    class="form-select mb-100"
                     aria-label="seat-type"
                   >
                     <option disabled value="">Seat type</option>
@@ -139,6 +136,7 @@
                   </select>
                 </div>
               </form>
+              <div class="legend d-flex justify-content-start"><span class="icon"></span> Driver</div>
             </div>
             <div class="car-global" :class="changeColSize">
               <img class="col-12 bus-front" src="/images/seats/bus_front.png" />
@@ -291,14 +289,16 @@ export default {
   },
   computed: {
     changeColSize() {
-      if (this.columns == 5) {
-        return "col-7";
-      } else if (this.columns == 4) {
-        return "col-6";
-      } else if (this.columns == 3) {
-        return "col-5";
+      switch (this.columns) {
+        case 5:
+          return "col-7";
+        case 4:
+          return "col-6";
+        case 3:
+          return "col-5";
+        default:
+          return "col-8";
       }
-      return "col-8";
     },
   },
 };
