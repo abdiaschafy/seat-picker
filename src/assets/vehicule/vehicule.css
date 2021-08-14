@@ -1,0 +1,85 @@
+.car {
+  border: none;
+  border-bottom: 4px solid #a9aca9;
+  border-left: 2px solid #a9aca9;
+  border-right: 2px solid #a9aca9;
+  border-radius: 14px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+.car-global {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+.car img {
+  cursor: pointer;
+}
+.bus-front {
+  height: 100px;
+}
+.seat {
+  width: 33px;
+  max-width: 80px;
+  min-width: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+}
+.seat-car {
+  margin: 0;
+  padding: 0;
+}
+.custom-number {
+  position: relative;
+  width: 140px;
+}
+.custom-number-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 10px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+}
+.custom-number-botton {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  bottom: 20px;
+  border: 0;
+  background: #099e47;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+.custom-number-botton-down {
+  position: absolute;
+  right: 3px;
+  top: 20px;
+  bottom: 10px;
+  border: 0;
+  background: #099e47;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
